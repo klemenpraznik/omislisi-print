@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@media print {
+  header,
+  .messages.fixed,
+  .page.edge,
+  footer {
+    display: none !important;
+  }
+  #print-element * {
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  }
+
+  #print-element h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+    width: 100%;
+  }
+
+  #print-element h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.4rem;
+    margin-bottom: 0.4rem;
+    width: 100%;
+  }
+
+  .priority, 
+  .surface, 
+  .current-date {
+    margin-bottom: 0.4rem;
+  }
+
+  #print-element .ventilation-type {
+    margin-top: 0.4rem;
+  }
+
+  #print-element .property-value {
+    font-weight: 600;
+  }
+
+  #print-element .message {
+    font-size: 1.1rem;
+  }
+
+  #print-element .orange-text {
+    color: #f58128;
+  }
+}

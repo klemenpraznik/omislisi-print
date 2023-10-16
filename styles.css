@@ -1,0 +1,41 @@
+.print-button {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  background-color: rgb(245, 129, 40);
+  border-radius: 50%;
+  padding: 10px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: tilt-shaking 2s infinite;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.print-button:hover {
+    box-shadow: 0px 0px 30px 2px rgb(245, 129, 40);
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  2% {
+    transform: rotate(10deg);
+  }
+  4% {
+    transform: rotate(0deg);
+  }
+  6% {
+    transform: rotate(-10deg);
+  }
+  8% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
